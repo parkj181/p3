@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slideshow Animation | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="content">
+      <div class="images">
+        <img src="img/n1.png">
+        <img src="img/n2.png">
+        <img src="img/n3.png">
+        <img src="img/n4.png">
+        <img src="img/n5.png">
+        <img src="img/n6.png">
+        <img src="img/n7.png">
+        <img src="img/n8.png">
+        <img src="img/n9.png">
+        <img src="img/n10.png">
+        <img src="img/n10-1.png">
+        <img src="img/n11.png">
+        <img src="img/n12.png">
+        <img src="img/n13.png">
+      
+
+      <script>
+        var indexValue = 0;
+        function slideShow(){
+          setTimeout(slideShow, 2500);
+          var x;
+          const img = document.querySelectorAll("img");
+          for(x = 0; x < img.length; x++){
+            img[x].style.display = "none";
+          }
+          indexValue++;
+          if(indexValue > img.length){indexValue = 1}
+          img[indexValue -1].style.display = "block";
+        }
+        slideShow();
+      </script>
+      </div>
+
+      <div class="content2">
+        <div class="images2">
+          <img src="img/s1.png">
+          <img src="img/s2.png">
+          <img src="img/s3.png">
+          <img src="img/s4.png">
+          <img src="img/s5.png">
+          <img src="img/s6.png">
+          <img src="img/s7.png">
+          <img src="img/s8.png">
+          <img src="img/s9.png">
+          <img src="img/s10.png">
+          <img src="img/s11.png">
+          <img src="img/s12.png">
+          <img src="img/s13.png">
+          <img src="img/s14.png">
+       
+
+        <script>
+            var indexValue = 0;
+            function slideShow(){
+              setTimeout(slideShow, 2500);
+              var x;
+              const img = document.querySelectorAll("img");
+              for(x = 0; x < img.length; x++){
+                img[x].style.display = "none";
+              }
+              indexValue++;
+              if(indexValue > img.length){indexValue = 1}
+              img[indexValue -1].style.display = "block";
+            }
+            slideShow();
+          </script>
+           </div>
+        
+</div>
+
+
+  </body>
+</html>
